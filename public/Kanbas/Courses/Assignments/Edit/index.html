@@ -1,0 +1,94 @@
+<html>
+
+<head></head>
+
+<body>
+    <select>
+        <option>SpeedGrader</option>
+        <option>Gradescope</option>
+    </select>
+    <hr />
+    <form action="/Kanbas/Courses/Assignments/screen.html">
+        <label>
+            <h4>
+                Assignment Name
+            </h4>
+        </label>
+
+        <input value="A1 - ENV + HTML" />
+        <br /><br />
+        <textarea>This is the assignment description</textarea>
+        <br /><br />
+        <label>Points</label>
+        <br />
+        <input value="100" />
+        <br /><br />
+        <label>Assignment Group</label>
+        <br />
+        <select>
+            <option>ASSIGNMENTS</option>
+            <option>QUIZZES</option>
+            <option>EXAMS</option>
+            <option>PROJECT</option>
+        </select>
+        <br /><br />
+        <label>Display Grade as</label>
+        <br />
+        <select>
+            <option>Percentage</option>
+            <option>Points</option>
+            <option>Complete/Incomplete</option>
+            <option>Letter Grade</option>
+        </select>
+        <br /><br />
+        <label>Submission Type</label>
+        <br />
+        <select>
+            <option>Online</option>
+            <option>On Paper</option>
+            <option>No Submission</option>
+        </select>
+        <br /><br />
+        <label>Online Entry Options</label>
+        <br />
+        <input type="checkbox" id="online_entry_options1" />
+        <label for="online_entry_options1">Text Entry</label>
+        <br />
+        <input type="checkbox" id="online_entry_options2" />
+        <label for="online_entry_options2">Website URL</label>
+        <br />
+        <input type="checkbox" id="online_entry_options3" />
+        <label for="online_entry_options3">Media Recordings</label>
+        <br />
+        <input type="checkbox" id="online_entry_options4" />
+        <label for="online_entry_options4">Student Annotation</label>
+        <br />
+        <input type="checkbox" id="online_entry_options5" />
+        <label for="online_entry_options5">File Uploads</label>
+        <br /><br />
+
+        <label>Assign</label>
+        <br />
+        <label>Assign to</label>
+        <br />
+        <input value="Everyone" />
+        <br /><br />
+        <label>Due</label>
+        <br />
+        <input type="date" />
+        <br /><br />
+        <label>Available From</label>
+        <br />
+        <input type="date" />
+        <br /><br />
+        <label>Until</label>
+        <br />
+        <input type="date" />
+        <br /><br />
+
+        <input type="submit" value="Cancel"></button>
+        <input type="submit" value="Save"></button>
+    </form>
+</body>
+
+</html>
