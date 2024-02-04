@@ -2,3 +2,7 @@
     font-size: smaller;
     color: grey;
 }
+
+.vertical-center-span {
+    place-self: center;
+}
