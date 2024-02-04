@@ -1,0 +1,40 @@
+.btn-custom {
+    width: 300px;
+    background-color: lightgrey;
+    color: black;
+    text-align: left;
+}
+
+.btn-custom-top {
+    width: 150px;
+    background-color: lightgrey;
+    color: black;
+    text-align: left;
+}
+
+.btn-custom>i {
+    padding-right: 10px;
+}
+
+#view_calendar {
+    color: red;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a div:first-child {
+    color: red;
+}
+
+ul li a div:nth-child(2),
+ul li a div:nth-child(3) {
+    color: grey;
+}
