@@ -1,163 +1,306 @@
 <html>
 
-<head></head>
+<head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+</head>
 
 <body>
-    <table>
-        <tr>
-            <td>
-                <input placeholder="Search for Assignments" />
-            </td>
-            <td>
-                <button>+ Group</button>
-            </td>
-            <td>
-                <button>+ Assignment</button>
-            </td>
-            <td>
-                <select>
-                    <option>Edit Assignment Dates</option>
-                    <option>Assignment Groups Weight</option>
-                    <option>Gradescope 1.3</option>
-                </select>
-            </td>
-        </tr>
-    </table>
+    <div class="d-flex">
+        <input class="form-control w-25 mx-2" placeholder="Search for Assignment" />
+        <button class="btn btn-secondary mx-2">+Group</button>
+        <button class="btn btn-danger mx-2">+Assignment</button>
+        <button><i class="fa fa-ellipsis-v"></i></button>
+    </div>
 
     <hr />
 
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <b>ASSIGNMENTS 40% of Total</b>
-                </td>
-                <td>
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move To...</option>
-                        <option>Send To...</option>
-                        <option>Copy To...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A1 - ENV + HTML</a><br />
-                            <a href="#">Multiple Modules</a> | Not available yet<br />
-                        </li>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A2 - CSS + BOOTSTRAP</a><br />
-                            <a href="#">Multiple Modules</a> | Not available yet<br />
-                        </li>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A3 - JS + REACT</a><br />
-                            <a href="#">Multiple Modules</a> | Not available yet<br />
-                        </li>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/Edit/screen.html">A4 - STATE + REDUX</a><br />
-                            <a href="#">Multiple Modules</a> | Not available yet<br />
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b>QUIZZES 10% of Total</b>
-                </td>
-                <td>
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move To...</option>
-                        <option>Send To...</option>
-                        <option>Copy To...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q1 - HTML</a><br />
-                            <a href="#">Multiple Modules</a> | Not available yet<br />
-                        </li>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Q2 - CSS</a><br />
-                            <a href="#">Multiple Modules</a> | Not available yet<br />
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b>EXAMS 20% of Total</b>
-                </td>
-                <td>
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move To...</option>
-                        <option>Send To...</option>
-                        <option>Copy To...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Midterm</a><br />
-                            <a href="#">Multiple Modules</a> | Not available yet<br />
-                        </li>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Final</a><br />
-                            <a href="#">Multiple Modules</a> | Not available yet<br />
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b>PROJECT 30% of Total</b>
-                </td>
-                <td>
-                    <select>
-                        <option>Edit</option>
-                        <option>Speed Grader</option>
-                        <option>Duplicate</option>
-                        <option>Delete</option>
-                        <option>Move To...</option>
-                        <option>Send To...</option>
-                        <option>Copy To...</option>
-                        <option>Share to Commons</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="/Kanbas/Courses/Assignments/Edit/screen.html">Project</a><br />
-                            <a href="#">Multiple Modules</a> | Not available yet<br />
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <ul class="list-group wd-modules">
+        <li class="list-group-item">
+            <div>
+                <i class="fa fa-ellipsis-v"></i> <i class="fa fa-caret-down"></i>
+                <b>Assignments</b>
+
+                <span class="float-end">
+                    <label class="border rounded border-secondary">40% of Total</label>
+                    <i class="fa fa-plus ms-2"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>A1 SETUP</b><br />
+                            <span class="assignment-description">
+                                Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>A2 HTML</b><br />
+                            <span class="assignment-description">
+                                Week 1 - SETUP - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>A3 CSS</b><br />
+                            <span class="assignment-description">
+                                Week 2 - CSS - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>A4 BOOTSTRAP</b><br />
+                            <span class="assignment-description">
+                                Week 3 - Bootstrap - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>A5 JAVASCRIPT</b><br />
+                            <span class="assignment-description">
+                                Week 4 - JavaScript - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+        <li class="list-group-item">
+            <div>
+                <i class="fa fa-ellipsis-v"></i> <i class="fa fa-caret-down"></i>
+                <b>Quizzes</b>
+
+                <span class="float-end">
+                    <label class="border rounded border-secondary">10% of Total</label>
+                    <i class="fa fa-plus ms-2"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>Q1 SETUP</b><br />
+                            <span class="assignment-description">
+                                Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>Q2 HTML</b><br />
+                            <span class="assignment-description">
+                                Week 1 - SETUP - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>Q3 CSS</b><br />
+                            <span class="assignment-description">
+                                Week 2 - CSS - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+        <li class="list-group-item">
+            <div>
+                <i class="fa fa-ellipsis-v"></i> <i class="fa fa-caret-down"></i>
+                <b>Exams</b>
+
+                <span class="float-end">
+                    <label class="border rounded border-secondary">20% of Total</label>
+                    <i class="fa fa-plus ms-2"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>Exam 1 HTML+CSS</b><br />
+                            <span class="assignment-description">
+                                Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>Exam 1 BOOTSTRAP+JAVASCRIPT</b><br />
+                            <span class="assignment-description">
+                                Week 1 - SETUP - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+        <li class="list-group-item">
+            <div>
+                <i class="fa fa-ellipsis-v"></i> <i class="fa fa-caret-down"></i>
+                <b>Project</b>
+
+                <span class="float-end">
+                    <label class="border rounded border-secondary">30% of Total</label>
+                    <i class="fa fa-plus ms-2"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <span>
+                            <i class="fa fa-ellipsis-v"></i>
+                            <i class="fa fa-pencil-square-o mx-3"></i>
+                        </span>
+                        <span class="flex-fill">
+                            <b>Project Work</b><br />
+                            <span class="assignment-description">
+                                Week 12 - Project - Week Starting on Monday September 5th (9/5/2022) Module |<br />
+                                <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                            </span>
+                        </span>
+                        <span>
+                            <i class="fa fa-check-circle text-success"></i>
+                            <i class="fa fa-ellipsis-v ms-2"></i>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </body>
 
 </html>
