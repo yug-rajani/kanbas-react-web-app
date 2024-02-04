@@ -43,3 +43,9 @@
 .wd-modules>li {
     margin-bottom: 20px;
 }
+
+.breadcrumb-item>a {
+    font-size: medium;
+    text-decoration: none;
+    color: red;
+}

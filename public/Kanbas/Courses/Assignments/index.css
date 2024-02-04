@@ -6,3 +6,14 @@
 .vertical-center-span {
     place-self: center;
 }
+
+.breadcrumb-item>a {
+    font-size: medium;
+    text-decoration: none;
+    color: red;
+}
+
+.assignment-link {
+    text-decoration: none;
+    color: black;
+}
