@@ -1,66 +1,60 @@
 <html>
 
-<head></head>
+<head>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+</head>
 
 <body>
-    <table>
-        <tbody>
-            <tr>
-                <td>
-                    <select>
-                        <option>Gradebook</option>
-                        <option>Change Gradebook View</option>
-                        <option>Traditional Gradebook</option>
-                        <option>Individual Gradebook</option>
-                    </select>
-                </td>
-                <td>
-                    <button>Shortcuts</button>
-                    <button>Import</button>
-                    <select>
-                        <option>Export</option>
-                        <option>Export Current Gradebook View</option>
-                        <option>Export Entire Gradebook</option>
-                    </select>
-                    <button>Configure</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h4>Student Names</h4>
-                    <input placeholder="Search Students" /><br />
-                    <select>
-                        <option>John Doe</option>
-                        <option>Jane Doe</option>
-                        <option>Alice Wonderland</option>
-                        <option>Charlie Brown</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h4>Assignment Names</h4>
-                    <input placeholder="Search Assignments" /><br />
-                    <select>
-                        <option>A1</option>
-                        <option>A2</option>
-                        <option>Q1</option>
-                        <option>E1</option>
-                    </select>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">CS5610.11744.202310</a></li>
+            <li class="breadcrumb-item active">Grades</li>
+        </ol>
+    </nav>
+    <hr />
+    <div class="d-flex justify-content-end">
+        <button class="btn mx-2" style="background-color: lightgrey;"><i class="fa fa-upload mx-1"></i>Import</button>
+        <button class="btn mx-2" style="background-color: lightgrey;"><i
+                class="fa fa-paper-plane-o mx-1"></i>Export</button>
+        <button class="btn mx-2" style="background-color: lightgrey;"><i class="fa fa-gear"></i></button>
+    </div>
 
-    <button>Apply Filters</button>
+    <div class="d-flex justify-content-between">
+        <div class="w-50">
+            <b>Student Names</b>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-search"></i> </span>
+                <input placeholder="Search Students" type="text" class="form-control">
+                <span class="input-group-text"><i class="fa fa-caret-down"></i></span>
+            </div>
+        </div>
 
-    <table border="1">
+        <div class="w-50">
+            <b>Assignment Names</b>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fa fa-search"></i> </span>
+                <input placeholder="Search Assignments" type="text" class="form-control">
+                <span class="input-group-text"><i class="fa fa-caret-down"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <button class="btn p-1 m-2" style="background-color: lightgrey;"><i class="fa fa-filter"></i>Apply
+            Filters</button>
+    </div>
+
+    <table class="table table-striped border-top border-right border-bottom border-left">
         <thead>
             <tr>
                 <th>Student Name</th>
                 <th>A1 SETUP<br />Out of 100</th>
                 <th>A2 HTML<br />Out of 100</th>
                 <th>Q1 QUIZ<br />Out of 100</th>
+                <th>Q2 QUIZ<br />Out of 100</th>
                 <th>E1 EXAM<br />Out of 100</th>
             </tr>
         </thead>
@@ -69,28 +63,32 @@
             <td>90%</td>
             <td>100%</td>
             <td>95%</td>
-            <td><input value="100" /></td>
+            <td><input value="100" /><i class="fa fa-arrow-circle-o-right"></i></td>
+            <td>95%</td>
         </tr>
         <tr>
             <td>Jane Doe</td>
             <td>97%</td>
-            <td><input value="100" /></td>
+            <td><input value="100" /><i class="fa fa-arrow-circle-o-right"></i></td>
             <td>100%</td>
             <td>93%</td>
+            <td><input value="100" /><i class="fa fa-arrow-circle-o-right"></i></td>
         </tr>
         <tr>
             <td>Charlie Brown</td>
             <td>72%</td>
             <td>100%</td>
-            <td><input value="100" /></td>
+            <td><input value="100" /><i class="fa fa-arrow-circle-o-right"></i></td>
             <td>90%</td>
+            <td>72%</td>
         </tr>
         <tr>
             <td>Jim Halpert</td>
-            <td><input value="100" /></td>
+            <td><input value="100" /><i class="fa fa-arrow-circle-o-right"></i></td>
             <td>100%</td>
             <td>98%</td>
             <td>100%</td>
+            <td><input value="100" /><i class="fa fa-arrow-circle-o-right"></i></td>
         </tr>
     </table>
 </body>

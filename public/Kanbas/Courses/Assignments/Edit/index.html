@@ -1,93 +1,175 @@
 <html>
 
-<head></head>
+<head>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/Edit/index.css" />
+</head>
 
 <body>
-    <select>
-        <option>SpeedGrader</option>
-        <option>Gradescope</option>
-    </select>
+    <div class="d-flex">
+        <div class="ms-auto">
+            <button class="btn btn-success" disabled> <i class="fa fa-check-circle"></i>
+                Published</button>
+            <button class="btn btn-secondary"> <i class="fa fa-ellipsis-v"></i></button>
+        </div>
+    </div>
+
     <hr />
+
     <form action="/Kanbas/Courses/Assignments/screen.html">
         <label>
-            <h4>
+            <h5>
                 Assignment Name
-            </h4>
+            </h5>
         </label>
+        <input value="A1 - ENV + HTML" class="form-control" />
 
-        <input value="A1 - ENV + HTML" />
-        <br /><br />
-        <textarea>This is the assignment description</textarea>
-        <br /><br />
-        <label>Points</label>
         <br />
-        <input value="100" />
-        <br /><br />
-        <label>Assignment Group</label>
-        <br />
-        <select>
-            <option>ASSIGNMENTS</option>
-            <option>QUIZZES</option>
-            <option>EXAMS</option>
-            <option>PROJECT</option>
-        </select>
-        <br /><br />
-        <label>Display Grade as</label>
-        <br />
-        <select>
-            <option>Percentage</option>
-            <option>Points</option>
-            <option>Complete/Incomplete</option>
-            <option>Letter Grade</option>
-        </select>
-        <br /><br />
-        <label>Submission Type</label>
-        <br />
-        <select>
-            <option>Online</option>
-            <option>On Paper</option>
-            <option>No Submission</option>
-        </select>
-        <br /><br />
-        <label>Online Entry Options</label>
-        <br />
-        <input type="checkbox" id="online_entry_options1" />
-        <label for="online_entry_options1">Text Entry</label>
-        <br />
-        <input type="checkbox" id="online_entry_options2" />
-        <label for="online_entry_options2">Website URL</label>
-        <br />
-        <input type="checkbox" id="online_entry_options3" />
-        <label for="online_entry_options3">Media Recordings</label>
-        <br />
-        <input type="checkbox" id="online_entry_options4" />
-        <label for="online_entry_options4">Student Annotation</label>
-        <br />
-        <input type="checkbox" id="online_entry_options5" />
-        <label for="online_entry_options5">File Uploads</label>
-        <br /><br />
 
-        <label>Assign</label>
-        <br />
-        <label>Assign to</label>
-        <br />
-        <input value="Everyone" />
-        <br /><br />
-        <label>Due</label>
-        <br />
-        <input type="date" />
-        <br /><br />
-        <label>Available From</label>
-        <br />
-        <input type="date" />
-        <br /><br />
-        <label>Until</label>
-        <br />
-        <input type="date" />
-        <br /><br />
+        <textarea class="form-control">This is the assignment description</textarea>
 
-        <input type="submit" value="Cancel"></button>
-        <input type="submit" value="Save"></button>
+        <br />
+
+        <div class="row">
+            <div class="col-md-6 text-end">
+                <label class="mx-3">Points</label>
+            </div>
+            <div class="col-md-6">
+                <input type="number" class="form-control w-25" value="100" />
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-6 text-end">
+                <label class="mx-3">Assignment Group</label>
+            </div>
+            <div class="col-md-6">
+                <select class="form-control w-25">
+                    <option>ASSIGNMENTS</option>
+                    <option>QUIZZES</option>
+                    <option>EXAMS</option>
+                    <option>PROJECT</option>
+                </select>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-6 text-end">
+                <label>Display Grade as</label>
+            </div>
+            <div class="col-md-6">
+                <select>
+                    <option>Percentage</option>
+                    <option>Points</option>
+                    <option>Complete/Incomplete</option>
+                    <option>Letter Grade</option>
+                </select>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-6 text-end">
+                <label>Submission Type</label>
+            </div>
+            <div class="col-md-6">
+                <select>
+                    <option>Online</option>
+                    <option>On Paper</option>
+                    <option>No Submission</option>
+                </select>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-6 text-end">
+                <label>Online Entry Options</label>
+            </div>
+            <div class="col-md-6">
+                <input type="checkbox" id="online_entry_options1" />
+                <label for="online_entry_options1">Text Entry</label>
+                <br />
+                <input type="checkbox" id="online_entry_options2" />
+                <label for="online_entry_options2">Website URL</label>
+                <br />
+                <input type="checkbox" id="online_entry_options3" />
+                <label for="online_entry_options3">Media Recordings</label>
+                <br />
+                <input type="checkbox" id="online_entry_options4" />
+                <label for="online_entry_options4">Student Annotation</label>
+                <br />
+                <input type="checkbox" id="online_entry_options5" />
+                <label for="online_entry_options5">File Uploads</label>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-6 text-end">
+                <label>Assign</label>
+            </div>
+            <div class="col-md-6">
+                <label>Assign to</label>
+                <br />
+                <input value="Everyone" />
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-6 text-end">
+                <label>Due</label>
+            </div>
+            <div class="col-md-6">
+                <input class="form-control w-25" type="date" />
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-6 text-end">
+                <label>Available From</label>
+            </div>
+            <div class="col-md-6">
+                <input class="form-control w-25" type="date" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 text-end">
+                <label>Until</label>
+            </div>
+            <div class="col-md-6">
+                <input class="form-control w-25" type="date" />
+            </div>
+        </div>
+
+        <hr />
+        <div class="d-flex">
+            <div>
+                <input type="checkbox" id="notify_users" />
+                <label for="notify_users">Notify users that this content has changed</label>
+                <br />
+            </div>
+            <div class="ms-auto">
+                <button class="btn btn-secondary">Cancel</button>
+                <button class="btn btn-danger">Save</button>
+            </div>
+        </div>
+        <hr />
+
     </form>
 </body>
 

@@ -1,21 +1,68 @@
 <html>
 
-<head></head>
+<head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/Status/index.css" />
+</head>
 
 <body>
     <h4>Course Status</h4>
     <table>
         <tbody>
             <tr>
-                <td><button>Unpublish</button>
+                <td><button class="btn btn-secondary btn-custom-top my-2"> <i class="fa fa-ban"></i> Unpublish</button>
                 </td>
-                <td><button>Publish</button></td>
+                <td><button class="btn btn-success btn-custom-top my-2" disabled> <i class="fa fa-check-circle"></i>
+                        Published</button></td>
             </tr>
         </tbody>
     </table>
-    <button>Import Existing Content</button><br />
-    <button>Import from Commons</button><br />
-    <button>Choose Home Page</button><br />
+    <button class="btn btn-secondary my-1 btn-custom"> <i class="fa fa-upload"></i>Import Existing
+        Content</button><br />
+    <button class="btn btn-secondary my-1 btn-custom"> <i class="fa fa-cloud-upload"></i> Import from
+        Commons</button><br />
+    <button class="btn btn-secondary my-1 btn-custom"> <i class="fa fa-bar-chart"></i>View Course Stream</button><br />
+    <button class="btn btn-secondary my-1 btn-custom"> <i class="fa fa-bullhorn"></i>New Announcement</button><br />
+    <button class="btn btn-secondary my-1 btn-custom"> <i class="fa fa-bar-chart"></i>New Analytics</button><br />
+    <button class="btn btn-secondary my-1 btn-custom"> <i class="fa fa-bell"></i>View Course
+        Notifications</button><br />
+
+    <div class="d-flex">
+        <h4>Coming Up
+
+        </h4>
+
+        <a href="#" id="view_calendar" class="mx-3">
+            <i class="fa fa-calendar"></i>
+            View Calendar
+        </a><br />
+    </div>
+
+    <ul>
+        <li>
+            <a href="#">
+                <div><i class="fa fa-calendar"></i> Lecture</div>
+                <div>CS4550.12631.202410</div>
+                <div>Sep 7 at 11:45am</div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><i class="fa fa-calendar"></i> Lecture</div>
+                <div>CS4550.12631.202410</div>
+                <div>Sep 11 at 11:45am</div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div><i class="fa fa-calendar"></i> CS5610 06 SP23 Lecture</div>
+                <div>CS4550.12631.202410</div>
+                <div>Sep 11 at 6pm</div>
+            </a>
+        </li>
+    </ul>
 </body>
 
 </html>
