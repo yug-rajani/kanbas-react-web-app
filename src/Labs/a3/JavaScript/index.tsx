@@ -1,3 +1,10 @@
+import WorkingWithArrays from "./arrays/WorkingWithArrays";
+import IfElse from "./conditionals/IfElse";
+import TernaryOperator from "./conditionals/TernaryOperator";
+import ArrowFunctions from "./functions/ArrowFunctions";
+import ES5Functions from "./functions/ES5Functions";
+import FunctionParenthesisAndParameters from "./functions/FunctionParenthesisAndParameters";
+import ImpliedReturn from "./functions/ImpliedReturn";
 import BooleanVariables from "./variables/BooleanVariables";
 import VariableTypes from "./variables/VariableTypes";
 import VariablesAndConstants from "./variables/VariablesAndConstants";
@@ -10,6 +17,13 @@ function JavaScript() {
             <VariablesAndConstants />
             <VariableTypes />
             <BooleanVariables />
+            <IfElse />
+            <TernaryOperator />
+            <ES5Functions />
+            <ArrowFunctions />
+            <ImpliedReturn />
+            <FunctionParenthesisAndParameters />
+            <WorkingWithArrays />
         </div>
     );
 };
