@@ -6,7 +6,8 @@
         "points": 100,
         "due_date": "Oct 2 2022",
         "due_time": "9:00 AM",
-        "week_description": "Week 4: Advanced Propulsion Systems - Starting on September 26th"
+        "week_description": "Week 4: Advanced Propulsion Systems - Starting on September 26th",
+        "description": "Assignment on advanced propulsion systems"
     },
     {
         "_id": "A102",
@@ -15,7 +16,8 @@
         "points": 100,
         "due_date": "Oct 1 2022",
         "due_time": "10:30 AM",
-        "week_description": "Week 3: Propulsion Systems Analysis - Starting on September 19th"
+        "week_description": "Week 3: Propulsion Systems Analysis - Starting on September 19th",
+        "description": "Analysis of combustion systems"
     },
     {
         "_id": "A103",
@@ -24,7 +26,8 @@
         "points": 100,
         "due_date": "Sep 30 2022",
         "due_time": "2:00 PM",
-        "week_description": "Week 2: Nozzle Design Fundamentals - Starting on September 12th"
+        "week_description": "Week 2: Nozzle Design Fundamentals - Starting on September 12th",
+        "description": "Project on designing nozzles"
     },
     {
         "_id": "A201",
@@ -33,7 +36,8 @@
         "points": 100,
         "due_date": "Oct 3 2022",
         "due_time": "4:30 PM",
-        "week_description": "Week 5: Advanced Aerodynamics - Starting on October 3rd"
+        "week_description": "Week 5: Advanced Aerodynamics - Starting on October 3rd",
+        "description": "Quiz on advanced aerodynamics"
     },
     {
         "_id": "A202",
@@ -42,7 +46,8 @@
         "points": 100,
         "due_date": "Oct 4 2022",
         "due_time": "1:00 PM",
-        "week_description": "Week 6: Fluid Dynamics - Starting on October 10th"
+        "week_description": "Week 6: Fluid Dynamics - Starting on October 10th",
+        "description": "Analysis of fluid flow"
     },
     {
         "_id": "A203",
@@ -51,7 +56,8 @@
         "points": 100,
         "due_date": "Oct 5 2022",
         "due_time": "3:30 PM",
-        "week_description": "Week 7: Heat Transfer - Starting on October 17th"
+        "week_description": "Week 7: Heat Transfer - Starting on October 17th",
+        "description": "Analysis of heat transfer"
     },
     {
         "_id": "A301",
@@ -60,7 +66,8 @@
         "points": 90,
         "due_date": "Oct 6 2022",
         "due_time": "11:00 AM",
-        "week_description": "Week 8: Structural Analysis - Starting on October 24th"
+        "week_description": "Week 8: Structural Analysis - Starting on October 24th",
+        "description": "Task on structural design"
     },
     {
         "_id": "A302",
@@ -69,7 +76,8 @@
         "points": 100,
         "due_date": "Oct 7 2022",
         "due_time": "9:30 AM",
-        "week_description": "Week 9: Orbital Mechanics - Starting on October 31st"
+        "week_description": "Week 9: Orbital Mechanics - Starting on October 31st",
+        "description": "Calculations related to orbital mechanics"
     },
     {
         "_id": "A303",
@@ -78,6 +86,7 @@
         "points": 100,
         "due_date": "Oct 8 2022",
         "due_time": "2:30 PM",
-        "week_description": "Week 10: Systems Engineering - Starting on November 7th"
+        "week_description": "Week 10: Systems Engineering - Starting on November 7th",
+        "description": "Exam on systems engineering"
     }
 ]

@@ -37,7 +37,7 @@ function AssignmentEditor() {
 
         <br />
 
-        <textarea className="form-control">This is the assignment description</textarea>
+        <textarea className="form-control">{assignment?.description}</textarea>
 
         <br />
 
