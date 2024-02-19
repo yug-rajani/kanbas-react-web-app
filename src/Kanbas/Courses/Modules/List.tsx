@@ -3,6 +3,7 @@ import "./index.css";
 import { modules } from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaCaretDown } from "react-icons/fa";
 import { useParams } from "react-router";
+
 function ModuleList() {
     const { courseId } = useParams();
     const modulesList = modules.filter((module) => module.course === courseId);
@@ -56,4 +57,5 @@ function ModuleList() {
         </>
     );
 }
+
 export default ModuleList;
