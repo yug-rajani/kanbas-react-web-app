@@ -15,6 +15,12 @@ function Kanbas() {
                     <Route path="Dashboard" element={<Dashboard />} />
                     <Route path="Courses/*" element={<h1>Courses</h1>} />
                     <Route path="Courses/:courseId/*" element={<Courses />} />
+                    <Route path="Calendar" element={<Navigate to="Calendar" />} />
+                    <Route path="Inbox" element={<Navigate to="Inbox" />} />
+                    <Route path="History" element={<Navigate to="History" />} />
+                    <Route path="Studio" element={<Navigate to="Studio" />} />
+                    <Route path="Commons" element={<Navigate to="Commons" />} />
+                    <Route path="Help" element={<Navigate to="Help" />} />
                 </Routes>
 
             </div>
