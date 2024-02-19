@@ -50,8 +50,8 @@ function Assignments() {
                                             </Link>
                                         </b><br />
                                         <span className="assignment-description">
-                                            Week 0 - SETUP - Week Starting on Monday September 5th (9/5/2022) Module |<br />
-                                            <b>Due</b> Sep 18 2022 at 11:59pm | 100 pts
+                                            {assignment.week_description} |<br />
+                                            <b>Due</b> {assignment.due_date} at {assignment.due_time} | {assignment.points} pts
                                         </span>
                                     </span>
 

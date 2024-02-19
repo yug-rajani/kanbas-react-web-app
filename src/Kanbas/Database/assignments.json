@@ -2,46 +2,82 @@
     {
         "_id": "A101",
         "title": "Propulsion Assignment",
-        "course": "RS101"
+        "course": "RS101",
+        "points": 100,
+        "due_date": "Oct 2 2022",
+        "due_time": "9:00 AM",
+        "week_description": "Week 4: Advanced Propulsion Systems - Starting on September 26th"
     },
     {
         "_id": "A102",
         "title": "Combustion Analysis",
-        "course": "RS101"
+        "course": "RS101",
+        "points": 100,
+        "due_date": "Oct 1 2022",
+        "due_time": "10:30 AM",
+        "week_description": "Week 3: Propulsion Systems Analysis - Starting on September 19th"
     },
     {
         "_id": "A103",
         "title": "Nozzle Design Project",
-        "course": "RS101"
+        "course": "RS101",
+        "points": 100,
+        "due_date": "Sep 30 2022",
+        "due_time": "2:00 PM",
+        "week_description": "Week 2: Nozzle Design Fundamentals - Starting on September 12th"
     },
     {
         "_id": "A201",
         "title": "Aerodynamics Quiz",
-        "course": "RS102"
+        "course": "RS102",
+        "points": 100,
+        "due_date": "Oct 3 2022",
+        "due_time": "4:30 PM",
+        "week_description": "Week 5: Advanced Aerodynamics - Starting on October 3rd"
     },
     {
         "_id": "A202",
         "title": "Flow Analysis",
-        "course": "RS102"
+        "course": "RS102",
+        "points": 100,
+        "due_date": "Oct 4 2022",
+        "due_time": "1:00 PM",
+        "week_description": "Week 6: Fluid Dynamics - Starting on October 10th"
     },
     {
         "_id": "A203",
         "title": "Heating Analysis",
-        "course": "RS102"
+        "course": "RS102",
+        "points": 100,
+        "due_date": "Oct 5 2022",
+        "due_time": "3:30 PM",
+        "week_description": "Week 7: Heat Transfer - Starting on October 17th"
     },
     {
         "_id": "A301",
         "title": "Structural Design Task",
-        "course": "RS103"
+        "course": "RS103",
+        "points": 90,
+        "due_date": "Oct 6 2022",
+        "due_time": "11:00 AM",
+        "week_description": "Week 8: Structural Analysis - Starting on October 24th"
     },
     {
         "_id": "A302",
         "title": "Orbital Calculations",
-        "course": "RS103"
+        "course": "RS103",
+        "points": 100,
+        "due_date": "Oct 7 2022",
+        "due_time": "9:30 AM",
+        "week_description": "Week 9: Orbital Mechanics - Starting on October 31st"
     },
     {
         "_id": "A303",
         "title": "Systems Engineering Exam",
-        "course": "RS103"
+        "course": "RS103",
+        "points": 100,
+        "due_date": "Oct 8 2022",
+        "due_time": "2:30 PM",
+        "week_description": "Week 10: Systems Engineering - Starting on November 7th"
     }
 ]
