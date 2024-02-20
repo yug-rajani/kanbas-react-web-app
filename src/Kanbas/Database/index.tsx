@@ -2,4 +2,8 @@ import courses from "./courses.json";
 import modules from "./modules.json";
 import events from "./events.json";
 import assignments from "./assignments.json";
-export { courses, modules, events, assignments };
+import users from "./users.json";
+import grades from "./grades.json";
+import enrollments from "./enrollments.json";
+
+export { courses, modules, events, assignments, users, grades, enrollments };
