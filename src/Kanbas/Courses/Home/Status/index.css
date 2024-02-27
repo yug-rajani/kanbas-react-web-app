@@ -1,0 +1,44 @@
+.btn-custom {
+    width: 300px !important;
+    background-color: lightgrey !important;
+    color: black !important;
+    text-align: left !important;
+}
+
+.btn-custom-top {
+    width: 150px !important;
+    background-color: lightgrey !important;
+    color: black !important;
+    text-align: left !important;
+}
+
+.btn-custom-top-success {
+    width: 150px;
+    background-color: lightgrey;
+    color: black;
+    text-align: left;
+}
+
+
+#view_calendar {
+    color: red;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a div:first-child {
+    color: red;
+}
+
+ul li a div:nth-child(2),
+ul li a div:nth-child(3) {
+    color: grey;
+}

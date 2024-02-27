@@ -5,3 +5,6 @@ http://a1--cerulean-custard-31398e.netlify.app
 
 ### Assignment 2: Styling Web Pages with CSS
 http://a2--cerulean-custard-31398e.netlify.app
+
+### Assignment 3: Creating Single Page Applications with React.js
+http://a3--cerulean-custard-31398e.netlify.app

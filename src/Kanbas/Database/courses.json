@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "RS101",
+        "name": "React JS",
+        "number": "CS1234",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15",
+        "semester": "Spring 2023",
+        "textbook": "Full Stack software developer",
+        "image": "reactjs.jpg"
+    },
+    {
+        "_id": "RS102",
+        "name": "Python",
+        "number": "CS2345",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15",
+        "semester": "Spring 2023",
+        "textbook": "Python: Basics to Advanced",
+        "image": "python.jpg"
+    },
+    {
+        "_id": "RS103",
+        "name": "Mobile App Dev",
+        "number": "CS3456",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15",
+        "semester": "Spring 2023",
+        "textbook": "Flutter in Action",
+        "image": "flutter.jpg"
+    }
+]

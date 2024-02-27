@@ -1,0 +1,5 @@
+.custom-breadcrumb {
+    --bs-breadcrumb-divider: ">";
+    text-decoration: none;
+    color: red;
+}

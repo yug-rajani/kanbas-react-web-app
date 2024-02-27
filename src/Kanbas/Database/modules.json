@@ -1,0 +1,724 @@
+[
+    {
+        "_id": "M101",
+        "name": "Introduction to Rocket Propulsion",
+        "description": "Basic principles of rocket propulsion and rocket engines.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L101",
+                "name": "History of Rocketry",
+                "description": "A brief history of rocketry and space exploration.",
+                "module": "M101"
+            },
+            {
+                "_id": "L102",
+                "name": "Rocket Propulsion Fundamentals",
+                "description": "Basic principles of rocket propulsion.",
+                "module": "M101"
+            },
+            {
+                "_id": "L103",
+                "name": "Rocket Engine Types",
+                "description": "Overview of different types of rocket engines.",
+                "module": "M101"
+            },
+            {
+                "_id": "L104",
+                "name": "Propellant Chemistry",
+                "description": "Chemical composition and reactions of rocket propellants.",
+                "module": "M101"
+            },
+            {
+                "_id": "L105",
+                "name": "Thrust Vector Control",
+                "description": "Methods and technologies for controlling rocket thrust vector.",
+                "module": "M101"
+            }
+        ]
+    },
+    {
+        "_id": "M102",
+        "name": "Fuel and Combustion",
+        "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L201",
+                "name": "Rocket Fuel",
+                "description": "Overview of different types of rocket fuels.",
+                "module": "M102"
+            },
+            {
+                "_id": "L202",
+                "name": "Combustion Processes",
+                "description": "Understanding combustion processes and efficiency.",
+                "module": "M102"
+            },
+            {
+                "_id": "L203",
+                "name": "Combustion Instability",
+                "description": "Understanding combustion instability and mitigation.",
+                "module": "M102"
+            },
+            {
+                "_id": "L204",
+                "name": "Thermal Analysis of Propulsion Systems",
+                "description": "Analyzing thermal effects on rocket propulsion systems.",
+                "module": "M102"
+            },
+            {
+                "_id": "L205",
+                "name": "Green Propulsion Technologies",
+                "description": "Exploring environmentally friendly rocket propulsion alternatives.",
+                "module": "M102"
+            }
+        ]
+    },
+    {
+        "_id": "M103",
+        "name": "Nozzle Design 1",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M104",
+        "name": "Nozzle Design 2",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M105",
+        "name": "Nozzle Design 3",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M106",
+        "name": "Nozzle Design 4",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M107",
+        "name": "Nozzle Design 5",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M108",
+        "name": "Nozzle Design 6",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M109",
+        "name": "Nozzle Design 7",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design 8",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M110",
+        "name": "Nozzle Design 9",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M111",
+        "name": "Nozzle Design 10",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M112",
+        "name": "Nozzle Design 12",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M113",
+        "name": "Nozzle Design 13",
+        "description": "Principles of rocket nozzle design and performance optimization.",
+        "course": "RS101",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Nozzle Design",
+                "description": "Overview of different types of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L302",
+                "name": "Nozzle Performance",
+                "description": "Understanding nozzle performance and efficiency.",
+                "module": "M103"
+            },
+            {
+                "_id": "L303",
+                "name": "Nozzle Optimization",
+                "description": "Optimizing nozzle design for specific applications.",
+                "module": "M103"
+            },
+            {
+                "_id": "L304",
+                "name": "Computational Fluid Dynamics in Nozzle Design",
+                "description": "Application of CFD in the design and analysis of rocket nozzles.",
+                "module": "M103"
+            },
+            {
+                "_id": "L305",
+                "name": "Advanced Thrust Vectoring Techniques",
+                "description": "Cutting-edge methods for thrust vector control in rocket engines.",
+                "module": "M103"
+            }
+        ]
+    },
+    {
+        "_id": "M201",
+        "name": "Fundamentals of Aerodynamics",
+        "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+        "course": "RS102",
+        "lessons": [
+            {
+                "_id": "L401",
+                "name": "Basic Aerodynamics",
+                "description": "Introduction to the fundamental principles of aerodynamics.",
+                "module": "M201"
+            },
+            {
+                "_id": "L402",
+                "name": "Incompressible Flow",
+                "description": "Understanding the behavior of fluids under incompressible conditions.",
+                "module": "M201"
+            },
+            {
+                "_id": "L403",
+                "name": "Compressible Flow",
+                "description": "Exploring aerodynamic phenomena in compressible flow regimes.",
+                "module": "M201"
+            },
+            {
+                "_id": "L404",
+                "name": "Hypersonic Aerodynamics",
+                "description": "Studying aerodynamics at high speeds beyond Mach 5.",
+                "module": "M201"
+            },
+            {
+                "_id": "L405",
+                "name": "Experimental Aerodynamics",
+                "description": "Practical aspects and techniques in experimental aerodynamics.",
+                "module": "M201"
+            }
+        ]
+    },
+    {
+        "_id": "M202",
+        "name": "Subsonic and Supersonic Flow",
+        "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+        "course": "RS102",
+        "lessons": [
+            {
+                "_id": "L406",
+                "name": "Subsonic Aerodynamics",
+                "description": "Analysis of aerodynamics at speeds below the speed of sound.",
+                "module": "M202"
+            },
+            {
+                "_id": "L407",
+                "name": "Supersonic Aerodynamics",
+                "description": "Exploring aerodynamics at speeds beyond the speed of sound.",
+                "module": "M202"
+            },
+            {
+                "_id": "L408",
+                "name": "Transonic Flow",
+                "description": "Study of aerodynamics in the transition between subsonic and supersonic speeds.",
+                "module": "M202"
+            },
+            {
+                "_id": "L409",
+                "name": "Shock Waves and Expansion Fans",
+                "description": "Understanding the phenomena of shock waves and expansion fans in aerodynamics.",
+                "module": "M202"
+            },
+            {
+                "_id": "L410",
+                "name": "Aerodynamic Wing Design",
+                "description": "Principles and considerations in designing aerodynamic wings.",
+                "module": "M202"
+            }
+        ]
+    },
+    {
+        "_id": "M203",
+        "name": "Aerodynamic Heating",
+        "description": "Study of aerodynamic heating and thermal protection systems.",
+        "course": "RS102",
+        "lessons": [
+            {
+                "_id": "L411",
+                "name": "Heat Transfer in Aerospace",
+                "description": "Fundamental concepts of heat transfer in aerospace applications.",
+                "module": "M203"
+            },
+            {
+                "_id": "L412",
+                "name": "Ablative Heat Shield Technologies",
+                "description": "Exploring ablative materials and technologies for thermal protection.",
+                "module": "M203"
+            },
+            {
+                "_id": "L413",
+                "name": "Thermal Analysis of Spacecraft Reentry",
+                "description": "Analyzing thermal effects during spacecraft reentry into the Earth's atmosphere.",
+                "module": "M203"
+            },
+            {
+                "_id": "L414",
+                "name": "Radiative Cooling Techniques",
+                "description": "Utilizing radiative cooling methods to manage spacecraft temperatures.",
+                "module": "M203"
+            },
+            {
+                "_id": "L415",
+                "name": "Hypersonic Thermal Protection",
+                "description": "Developing thermal protection for hypersonic flight conditions.",
+                "module": "M203"
+            }
+        ]
+    },
+    {
+        "_id": "M301",
+        "name": "Spacecraft Structural Design",
+        "description": "Fundamentals of designing spacecraft structures and materials selection.",
+        "course": "RS103",
+        "lessons": [
+            {
+                "_id": "L501",
+                "name": "Structural Materials in Aerospace",
+                "description": "Selection and characteristics of materials used in spacecraft structures.",
+                "module": "M301"
+            },
+            {
+                "_id": "L502",
+                "name": "Structural Analysis Techniques",
+                "description": "Methods for analyzing and testing spacecraft structures.",
+                "module": "M301"
+            },
+            {
+                "_id": "L503",
+                "name": "Load Distribution and Stress Analysis",
+                "description": "Understanding how loads are distributed and analyzing stress in spacecraft structures.",
+                "module": "M301"
+            },
+            {
+                "_id": "L504",
+                "name": "Spacecraft Frame and Panel Design",
+                "description": "Designing spacecraft structures using frame and panel configurations.",
+                "module": "M301"
+            },
+            {
+                "_id": "L505",
+                "name": "Advanced Composite Materials in Spacecraft",
+                "description": "Applications and benefits of advanced composite materials in spacecraft design.",
+                "module": "M301"
+            }
+        ]
+    },
+    {
+        "_id": "M302",
+        "name": "Orbital Mechanics",
+        "description": "Understanding orbital dynamics and mission planning.",
+        "course": "RS103",
+        "lessons": [
+            {
+                "_id": "L506",
+                "name": "Keplerian Orbits",
+                "description": "Study of orbits based on Kepler's laws of planetary motion.",
+                "module": "M302"
+            },
+            {
+                "_id": "L507",
+                "name": "Orbital Maneuvers and Transfers",
+                "description": "Techniques for spacecraft orbital maneuvers and interplanetary transfers.",
+                "module": "M302"
+            },
+            {
+                "_id": "L508",
+                "name": "Gravity-Assist Trajectories",
+                "description": "Utilizing gravitational assists for spacecraft trajectory optimization.",
+                "module": "M302"
+            },
+            {
+                "_id": "L509",
+                "name": "Celestial Mechanics",
+                "description": "Understanding the gravitational interactions between celestial bodies.",
+                "module": "M302"
+            },
+            {
+                "_id": "L510",
+                "name": "Orbital Debris Management",
+                "description": "Strategies for managing and mitigating orbital debris in space.",
+                "module": "M302"
+            }
+        ]
+    },
+    {
+        "_id": "M303",
+        "name": "Spacecraft Systems Engineering",
+        "description": "Overview of spacecraft systems and subsystems engineering.",
+        "course": "RS103",
+        "lessons": [
+            {
+                "_id": "L511",
+                "name": "Systems Engineering Fundamentals",
+                "description": "Basic principles and processes of spacecraft systems engineering.",
+                "module": "M303"
+            },
+            {
+                "_id": "L512",
+                "name": "Power and Energy Systems",
+                "description": "Design and management of spacecraft power and energy systems.",
+                "module": "M303"
+            },
+            {
+                "_id": "L513",
+                "name": "Communication Systems in Spacecraft",
+                "description": "Communication technologies and systems used in spacecraft.",
+                "module": "M303"
+            },
+            {
+                "_id": "L514",
+                "name": "Guidance, Navigation, and Control Systems",
+                "description": "Implementing systems for spacecraft guidance, navigation, and control.",
+                "module": "M303"
+            },
+            {
+                "_id": "L515",
+                "name": "Spacecraft Environmental Control Systems",
+                "description": "Managing spacecraft environments for crewed and uncrewed missions.",
+                "module": "M303"
+            }
+        ]
+    }
+]
