@@ -10,8 +10,10 @@ function ModuleList() {
     const [selectedModule, setSelectedModule] = useState(moduleList[0]);
 
     const [module, setModule] = useState({
+        _id: new Date().getTime().toString(),
         name: "New Module",
         description: "New Description",
+        module: "M000",
         course: courseId,
     });
 
@@ -21,6 +23,23 @@ function ModuleList() {
             _id: new Date().getTime().toString()
         };
         const newModuleList = [newModule, ...moduleList];
+        setModuleList(newModuleList);
+    };
+
+    const deleteModule = (moduleId: string) => {
+        const newModuleList = moduleList.filter(
+            (module) => module._id !== moduleId);
+        setModuleList(newModuleList);
+    };
+
+    const updateModule = () => {
+        const newModuleList = moduleList.map((m) => {
+            if (m._id === module._id) {
+                return module;
+            } else {
+                return m;
+            }
+        });
         setModuleList(newModuleList);
     };
 
@@ -50,9 +69,13 @@ function ModuleList() {
                             ...module, description: e.target.value
                         })}
                     />
-                    <button className="btn btn-success mx-2 my-1 btn-sm"
+                    <button className="btn btn-success mx-1 my-1 btn-sm"
                         onClick={() => { addModule(module) }}>
                         + Add Module
+                    </button>
+                    <button className="btn btn-primary mx-1 my-1 btn-sm"
+                        onClick={updateModule}>
+                        Update
                     </button>
                 </li>
 
@@ -64,11 +87,22 @@ function ModuleList() {
                             className="list-group-item"
                             onClick={() => setSelectedModule(module)}
                             style={{ borderRadius: "0px", padding: "0px" }}>
+
                             <div>
                                 <FaEllipsisV className="me-2" />
                                 <FaCaretDown className="me-2" />
                                 {module.name}
                                 <span className="float-end">
+                                    <button
+                                        className="btn btn-primary btn-sm mx-1"
+                                        onClick={(event) => { setModule(module); }}>
+                                        Edit
+                                    </button>
+                                    <button
+                                        className="btn btn-danger btn-sm mx-1"
+                                        onClick={() => deleteModule(module._id)}>
+                                        Delete
+                                    </button>
                                     <FaCheckCircle className="text-success" />
                                     <FaPlusCircle className="ms-2" />
                                     <FaEllipsisV className="ms-2" />
@@ -76,8 +110,8 @@ function ModuleList() {
                             </div>
                             {selectedModule._id === module._id && (
                                 <ul className="list-group" style={{ borderRadius: "0px" }}>
-                                    {module.lessons?.map((lesson: { name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }) => (
-                                        <li className="list-group-item" style={{ borderRadius: "0px" }}>
+                                    {module.lessons?.map((lesson: { name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }, index: React.Key | null | undefined) => (
+                                        <li key={index} className="list-group-item" style={{ borderRadius: "0px" }}>
                                             <FaEllipsisV className="me-2" />
                                             {lesson.name}
                                             <span className="float-end">
