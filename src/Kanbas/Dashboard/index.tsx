@@ -4,8 +4,7 @@ import * as db from "../Database";
 import { FaComment, FaFolder, FaPenSquare } from "react-icons/fa";
 function Dashboard() {
     const [courses, setCourses] = useState(db.courses);
-
-    const course = {
+    const [course, setCourse] = useState({
         _id: "0",
         name: "New Course",
         number: "New Number",
@@ -14,7 +13,7 @@ function Dashboard() {
         semester: "New Semester",
         textbook: "New Course Textbook",
         image: "reactjs.jpg"
-    };
+    });
 
     const addNewCourse = () => {
         const newCourse = {
@@ -24,12 +23,50 @@ function Dashboard() {
         setCourses([...courses, { ...course, ...newCourse }]);
     };
 
+    const deleteCourse = (courseId: string) => {
+        setCourses(courses.filter((course) => course._id !== courseId));
+    };
+
+    const updateCourse = () => {
+        setCourses(
+            courses.map((c) => {
+                if (c._id === course._id) {
+                    return course;
+                } else {
+                    return c;
+                }
+            })
+        );
+    };
+
     return (
         <div className="p-4">
             <h1>Dashboard</h1>
-            <button className="btn btn-danger mx-1" onClick={addNewCourse} >
+            <h5>Course</h5>
+            <input value={course.name} className="form-control w-25"
+                onChange={(e) => setCourse({ ...course, name: e.target.value })} />
+            <input value={course.number} className="form-control w-25"
+                onChange={(e) => setCourse({ ...course, number: e.target.value })} />
+            <input value={course.startDate} className="form-control w-25" type="date"
+                onChange={(e) => setCourse({ ...course, startDate: e.target.value })} />
+            <input value={course.endDate} className="form-control w-25" type="date"
+                onChange={(e) => setCourse({ ...course, endDate: e.target.value })} />
+            <input value={course.semester} className="form-control w-25"
+                onChange={(e) => setCourse({ ...course, semester: e.target.value })} />
+            <input value={course.textbook} className="form-control w-25"
+                onChange={(e) => setCourse({ ...course, textbook: e.target.value })} />
+            <input value={course.image} className="form-control w-25"
+                onChange={(e) => setCourse({ ...course, image: e.target.value })} />
+
+            <button className="btn btn-success mx-1 my-2" onClick={addNewCourse} >
                 + Add Course
             </button>
+
+            <button className="btn btn-primary mx-1 my-2"
+                onClick={updateCourse} >
+                Update
+            </button>
+
 
             <hr />
             <h2>Published Courses (3)</h2>
@@ -55,6 +92,21 @@ function Dashboard() {
                                                 {course.textbook} <br />
                                                 {course.startDate} {course.semester}
                                             </Link>
+                                            <br />
+                                            <button className="btn btn-danger btn-sm mt-2"
+                                                onClick={(event) => {
+                                                    event.preventDefault();
+                                                    deleteCourse(course._id);
+                                                }}>
+                                                Delete
+                                            </button>
+                                            <button className="btn btn-primary btn-sm mt-2 mx-2"
+                                                onClick={(event) => {
+                                                    event.preventDefault();
+                                                    setCourse(course);
+                                                }}>
+                                                Edit
+                                            </button>
                                         </p>
                                         <div className="d-flex">
                                             <FaPenSquare className="mx-3" />
