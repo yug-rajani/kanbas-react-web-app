@@ -1,47 +1,26 @@
 import React, { useState } from "react";
 import "./index.css";
-import { modules } from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaCaretDown } from "react-icons/fa";
 import { useParams } from "react-router";
+import { useSelector, useDispatch } from "react-redux";
+import {
+    addModule,
+    deleteModule,
+    updateModule,
+    setModule,
+} from "./reducer";
+import { KanbasState } from "../../store";
+
 
 function ModuleList() {
     const { courseId } = useParams();
-    const [moduleList, setModuleList] = useState<any[]>(modules);
+    const moduleList = useSelector((state: KanbasState) =>
+        state.modulesReducer.modules);
+    const module = useSelector((state: KanbasState) =>
+        state.modulesReducer.module);
+    const dispatch = useDispatch();
+
     const [selectedModule, setSelectedModule] = useState(moduleList[0]);
-
-    const [module, setModule] = useState({
-        _id: new Date().getTime().toString(),
-        name: "New Module",
-        description: "New Description",
-        module: "M000",
-        course: courseId,
-    });
-
-    const addModule = (module: any) => {
-        const newModule = {
-            ...module,
-            _id: new Date().getTime().toString()
-        };
-        const newModuleList = [newModule, ...moduleList];
-        setModuleList(newModuleList);
-    };
-
-    const deleteModule = (moduleId: string) => {
-        const newModuleList = moduleList.filter(
-            (module) => module._id !== moduleId);
-        setModuleList(newModuleList);
-    };
-
-    const updateModule = () => {
-        const newModuleList = moduleList.map((m) => {
-            if (m._id === module._id) {
-                return module;
-            } else {
-                return m;
-            }
-        });
-        setModuleList(newModuleList);
-    };
 
     return (
         <>
@@ -60,21 +39,21 @@ function ModuleList() {
                 <li className="list-group-item" style={{ borderRadius: "0px", padding: "0px" }}>
                     <input value={module.name}
                         className="form-control w-75 my-1 mx-2"
-                        onChange={(e) => setModule({
-                            ...module, name: e.target.value
-                        })}
+                        onChange={(e) =>
+                            dispatch(setModule({ ...module, name: e.target.value }))
+                        }
                     />
                     <textarea value={module.description} className="form-control my-1 mx-2 w-75"
-                        onChange={(e) => setModule({
-                            ...module, description: e.target.value
-                        })}
+                        onChange={(e) =>
+                            dispatch(setModule({ ...module, description: e.target.value }))
+                        }
                     />
                     <button className="btn btn-success mx-1 my-1 btn-sm"
-                        onClick={() => { addModule(module) }}>
+                        onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
                         + Add Module
                     </button>
                     <button className="btn btn-primary mx-1 my-1 btn-sm"
-                        onClick={updateModule}>
+                        onClick={() => dispatch(updateModule(module))}>
                         Update
                     </button>
                 </li>
@@ -95,12 +74,12 @@ function ModuleList() {
                                 <span className="float-end">
                                     <button
                                         className="btn btn-primary btn-sm mx-1"
-                                        onClick={(event) => { setModule(module); }}>
+                                        onClick={() => dispatch(setModule(module))}>
                                         Edit
                                     </button>
                                     <button
                                         className="btn btn-danger btn-sm mx-1"
-                                        onClick={() => deleteModule(module._id)}>
+                                        onClick={() => dispatch(deleteModule(module._id))}>
                                         Delete
                                     </button>
                                     <FaCheckCircle className="text-success" />
