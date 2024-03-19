@@ -1,21 +1,39 @@
-import React from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
-import { assignments } from "../../../Database";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams, Link, useLocation } from "react-router-dom";
 import { FaCheckCircle, FaEllipsisV } from "react-icons/fa";
 import "./index.css";
+import {
+  addAssignment,
+  updateAssignment,
+  setAssignment,
+} from "../assignmentsReducer";
+import { KanbasState } from "../../../store";
+import { useDispatch, useSelector } from "react-redux";
 
 function AssignmentEditor() {
-  const { assignmentId } = useParams();
-  const assignment = assignments.find(
-    (assignment) => assignment._id === assignmentId
-  );
   const { courseId } = useParams();
   const navigate = useNavigate();
+  const [isNewAssignment, setIsNewAssignment] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    setIsNewAssignment(location.pathname.endsWith("/new"));
+  }, [location.pathname]);
+
+  const assignment = useSelector((state: KanbasState) =>
+    state.assignmentsReducer.assignment);
+  const dispatch = useDispatch();
+
   const handleSave = () => {
-    console.log("Actually saving assignment TBD in later assignments");
+    if (isNewAssignment) {
+      dispatch(addAssignment({ ...assignment, course: courseId }));
+    } else {
+      dispatch(updateAssignment(assignment));
+    }
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
+
   return (
+
     <div className="flex-fill px-5">
       <div className="d-flex">
         <div className="ms-auto">
@@ -33,11 +51,22 @@ function AssignmentEditor() {
             Assignment Name
           </h5>
         </label>
-        <input value={assignment?.title} className="form-control" />
-
+        <input
+          value={assignment.title}
+          onChange={(e) =>
+            dispatch(setAssignment({ ...assignment, title: e.target.value }))
+          }
+          className="form-control" />
         <br />
 
-        <textarea className="form-control">{assignment?.description}</textarea>
+        <textarea
+          className="form-control"
+          onChange={(e) =>
+            dispatch(setAssignment({ ...assignment, description: e.target.value }))
+          }
+        >
+          {assignment?.description}
+        </textarea>
 
         <br />
 
@@ -46,7 +75,14 @@ function AssignmentEditor() {
             <label className="mx-3">Points</label>
           </div>
           <div className="col-md-6">
-            <input type="number" className="form-control" value={assignment?.points} />
+            <input
+              type="number"
+              className="form-control"
+              value={assignment?.points}
+              onChange={(e) =>
+                dispatch(setAssignment({ ...assignment, points: e.target.value }))
+              }
+            />
           </div>
         </div>
 
@@ -140,7 +176,14 @@ function AssignmentEditor() {
               <br />
 
               <label><b>Due</b></label>
-              <input className="form-control" type="date" />
+              <input
+                className="form-control"
+                type="date"
+                onChange={(e) =>
+                  dispatch(setAssignment({ ...assignment, due_date: e.target.value }))
+                }
+
+              />
               <br />
 
               <div className="row">
