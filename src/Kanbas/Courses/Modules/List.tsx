@@ -87,20 +87,22 @@ function ModuleList() {
                                     <FaEllipsisV className="ms-2" />
                                 </span>
                             </div>
-                            {selectedModule._id === module._id && (
-                                <ul className="list-group" style={{ borderRadius: "0px" }}>
-                                    {module.lessons?.map((lesson: { name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }, index: React.Key | null | undefined) => (
-                                        <li key={index} className="list-group-item" style={{ borderRadius: "0px" }}>
-                                            <FaEllipsisV className="me-2" />
-                                            {lesson.name}
-                                            <span className="float-end">
-                                                <FaCheckCircle className="text-success" />
-                                                <FaEllipsisV className="ms-2" />
-                                            </span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
+                            <div style={{ borderRadius: "0px", paddingInline: "0px", paddingBottom: "0px" }}>
+                                {selectedModule._id === module._id && (
+                                    <ul className="list-group" style={{ borderRadius: "0px" }}>
+                                        {module.lessons?.map((lesson: { name: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }, index: React.Key | null | undefined) => (
+                                            <li key={index} className="list-group-item" style={{ borderRadius: "0px" }}>
+                                                <FaEllipsisV className="me-2" />
+                                                {lesson.name}
+                                                <span className="float-end">
+                                                    <FaCheckCircle className="text-success" />
+                                                    <FaEllipsisV className="ms-2" />
+                                                </span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </div>
                         </li>
                     ))}
             </ul>
