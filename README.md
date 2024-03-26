@@ -11,3 +11,6 @@ http://a3--cerulean-custard-31398e.netlify.app
 
 ### Assignment 4: Managing State in React.js Application
 http://a4--cerulean-custard-31398e.netlify.app
+
+### Assignment 5: Implementing HTTP Servers and RESTful APIs with Node.js
+http://a5--cerulean-custard-31398e.netlify.app
