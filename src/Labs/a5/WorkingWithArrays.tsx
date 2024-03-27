@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function WorkingWithArrays() {
     const API = "http://localhost:4000/a5/todos";
@@ -10,6 +11,36 @@ function WorkingWithArrays() {
         due: "2021-09-09",
         completed: false,
     });
+
+    const [todos, setTodos] = useState([]);
+    const fetchTodos = async () => {
+        const response = await axios.get(API);
+        setTodos(response.data);
+    };
+    useEffect(() => {
+        fetchTodos();
+    }, []);
+
+    const removeTodo = async (todo: { id: number; title: string; }) => {
+        const response = await axios
+            .get(`${API}/${todo.id}/delete`);
+        setTodos(response.data);
+    };
+
+    const fetchTodoById = async (id: number) => {
+        const response = await axios.get(`${API}/${id}`);
+        setTodo(response.data);
+    };
+
+    const createTodo = async () => {
+        const response = await axios.get(`${API}/create`);
+        setTodos(response.data);
+    };
+
+    const updateTitle = async () => {
+        const response = await axios.get(`${API}/${todo.id}/title/${todo.title}`);
+        setTodos(response.data);
+    };
 
     return (
         <div>
@@ -76,6 +107,34 @@ function WorkingWithArrays() {
             <a href={`${API}/${todo.id}/completed/${todo.completed}`}>
                 Complete Todo ID = {todo.id}
             </a>
+
+            <br />
+
+            <button className="btn btn-primary btn-sm mx-5 my-1"
+                onClick={createTodo} >
+                Create Todo
+            </button>
+            <br />
+            <button className="btn btn-success btn-sm mx-5"
+                onClick={updateTitle} >
+                Update Title
+            </button>
+
+            <ul>
+                {todos.map((todo: { id: number, title: string }) => (
+                    <li key={todo.id}>
+                        {todo.title}
+                        <button className="mx-1 my-1 btn btn-warning btn-sm"
+                            onClick={() => fetchTodoById(todo.id)} >
+                            Edit
+                        </button>
+                        <button className="mx-1 my-1 btn btn-danger btn-sm"
+                            onClick={() => removeTodo(todo)} >
+                            Remove
+                        </button>
+                    </li>
+                ))}
+            </ul>
 
         </div>
     );
