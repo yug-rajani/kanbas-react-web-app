@@ -43,10 +43,12 @@ function WorkingWithObjects() {
                 ...assignment, title: e.target.value
             })}
                 value={assignment.title} type="text" />
-            <button onClick={updateTitle} >
+            <button className="btn btn-primary btn-sm mx-1"
+                onClick={updateTitle} >
                 Update Title to: {assignment.title}
             </button>
-            <button onClick={fetchAssignment} >
+            <button className="btn btn-primary btn-sm mx-1"
+                onClick={fetchAssignment} >
                 Fetch Assignment
             </button>
 

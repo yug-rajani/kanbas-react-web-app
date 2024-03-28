@@ -38,10 +38,12 @@ function EncodingParametersInURLs() {
                 onChange={(e) => setB(parseInt(e.target.value))} value={b} />
             <input value={result} type="number" readOnly />
             <h3>Fetch Result</h3>
-            <button onClick={() => fetchSum(a, b)} >
+            <button className="btn btn-primary btn-sm mx-1"
+                onClick={() => fetchSum(a, b)} >
                 Fetch Sum of {a} + {b}
             </button>
-            <button onClick={() => fetchSubtraction(a, b)} >
+            <button className="btn btn-primary btn-sm mx-1"
+                onClick={() => fetchSubtraction(a, b)} >
                 Fetch Substraction of {a} - {b}
             </button>
             <h3>Path Parameters</h3>
@@ -62,19 +64,19 @@ function EncodingParametersInURLs() {
             </a>
 
             <h3>Query Parameters</h3>
-            <a className="btn btn-primary"
+            <a className="btn btn-primary btn-sm"
                 href={`http://localhost:4000/a5/calculator?operation=add&a=${a}&b=${b}`}>
                 Add {a} + {b}
             </a>
-            <a className="btn btn-danger mx-2"
+            <a className="btn btn-danger btn-sm mx-2"
                 href={`http://localhost:4000/a5/calculator?operation=subtract&a=${a}&b=${b}`}>
                 Substract {a} - {b}
             </a>
-            <a className="btn btn-success"
+            <a className="btn btn-success btn-sm"
                 href={`http://localhost:4000/a5/calculator?operation=multiply&a=${a}&b=${b}`}>
                 Multiply {a} * {b}
             </a>
-            <a className="btn btn-warning mx-2"
+            <a className="btn btn-warning btn-sm mx-2"
                 href={`http://localhost:4000/a5/calculator?operation=divide&a=${a}&b=${b}`}>
                 Divide {a} / {b}
             </a>
