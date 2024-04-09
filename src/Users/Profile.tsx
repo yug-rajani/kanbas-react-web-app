@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import * as client from "./client";
 import { useState, useEffect } from "react";
 
@@ -22,6 +23,10 @@ export default function Profile() {
     return (
         <div>
             <h1>Profile</h1>
+            <Link to="/Kanbas/Account/Admin/Users"
+                className="btn btn-warning w-100">
+                Users
+            </Link>
             {profile && (
                 <div>
                     <input value={profile.username} onChange={(e) =>
