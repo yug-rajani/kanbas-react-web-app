@@ -24,7 +24,7 @@ function Courses({ courses }: { courses: any[]; }) {
 
     useEffect(() => {
         findCourseById(courseId);
-    }, [courseId]);
+    });
 
     const { pathname } = useLocation();
     const pathSegments = pathname.split('/');

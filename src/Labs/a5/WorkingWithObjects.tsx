@@ -23,7 +23,7 @@ function WorkingWithObjects() {
     };
     useEffect(() => {
         fetchAssignment();
-    }, []);
+    });
 
 
     const [module, setModule] = useState({

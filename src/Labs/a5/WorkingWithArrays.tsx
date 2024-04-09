@@ -26,7 +26,7 @@ function WorkingWithArrays() {
     };
     useEffect(() => {
         fetchTodos();
-    }, []);
+    });
 
     const [errorMessage, setErrorMessage] = useState(null);
     const deleteTodo = async (todo: { id: any; title?: string; description?: string; due?: string; completed?: boolean; }) => {
