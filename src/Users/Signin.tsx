@@ -19,9 +19,15 @@ export default function Signin() {
             <h1>Signin</h1>
             <input value={credentials.username} onChange={(e) =>
                 setCredentials({ ...credentials, username: e.target.value })} />
+            <br /><br />
             <input value={credentials.password} onChange={(e) =>
                 setCredentials({ ...credentials, password: e.target.value })} />
+            <br /><br />
             <button onClick={signin}> Signin </button>
+            <br /><br />
+            <button onClick={() => navigate("/Kanbas/Account/Signup")}>
+                Go to Signup
+            </button>
         </div>
     );
 }

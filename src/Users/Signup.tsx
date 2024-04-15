@@ -22,10 +22,16 @@ export default function Signup() {
             <input value={user.username} onChange={(e) => setUser({
                 ...user, username: e.target.value
             })} />
+            <br /><br />
             <input value={user.password} onChange={(e) => setUser({
                 ...user, password: e.target.value
             })} />
+            <br /><br />
             <button onClick={signup}> Signup </button>
+            <br /><br />
+            <button onClick={() => navigate("/Kanbas/Account/Signin")}>
+                Go to Signin
+            </button>
         </div>
     );
 }
