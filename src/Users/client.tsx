@@ -13,11 +13,6 @@ export interface User {
 };
 
 export const signin = async (credentials: User) => {
-    console.log("=================");
-    console.log("=================");
-    console.log(`${USERS_API}`);
-    console.log("=================");
-    console.log("=================");
     const response = await api.post(`${USERS_API}/signin`, credentials);
     return response.data;
 };
