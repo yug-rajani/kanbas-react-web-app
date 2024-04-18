@@ -8,7 +8,7 @@ import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
 
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = process.env.REACT_APP_API_BASE_A5;
 function Kanbas() {
     const [courses, setCourses] = useState<any[]>([]);
     const COURSES_API = `${API_BASE}/api/courses`;

@@ -2,7 +2,7 @@ import EncodingParametersInURLs from "./EncodingParametersInURLs";
 import WorkingWithArrays from "./WorkingWithArrays";
 import WorkingWithObjects from "./WorkingWithObjects";
 
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = process.env.REACT_APP_API_BASE_A5;
 function Assignment5() {
     return (
         <div>
